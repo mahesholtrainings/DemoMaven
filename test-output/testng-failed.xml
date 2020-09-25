@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" name="Failed suite [nopcommerce]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.nopcommerce.utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="4" name="TC_LoginTest_001(failed)" parallel="tests">
+    <classes>
+      <class name="com.nopcommerce.testcases.TC_LoginTest_001">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.nopcommerce.testcases.TC_LoginTest_001 -->
+    </classes>
+  </test> <!-- TC_LoginTest_001(failed) -->
+</suite> <!-- Failed suite [nopcommerce] -->
